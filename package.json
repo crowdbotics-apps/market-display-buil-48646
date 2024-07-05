@@ -22,6 +22,7 @@
     "@modules/privacy-policy-webview": "file:./modules/privacy-policy-webview/",
     "@modules/qr-code": "file:./modules/qr-code/",
     "@modules/social-login": "file:./modules/social-login/",
+    "@modules/terms-and-conditions": "file:./modules/terms-and-conditions",
     "@modules/typeform-webhook": "file:./modules/typeform-webhook/",
     "@react-native-async-storage/async-storage": "1.17.9",
     "@react-native-camera-roll/camera-roll": "5.0.2",
