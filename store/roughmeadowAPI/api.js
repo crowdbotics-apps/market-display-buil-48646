@@ -14,6 +14,24 @@ function api_v1_login_create(payload) {
 function api_v1_signup_create(payload) {
   return roughmeadowAPI.post(`/api/v1/signup/`, payload)
 }
+function modules_files_uploads_list(payload) {
+  return roughmeadowAPI.get(`/modules/files/uploads/`)
+}
+function modules_files_uploads_create(payload) {
+  return roughmeadowAPI.post(`/modules/files/uploads/`, payload)
+}
+function modules_files_uploads_retrieve(payload) {
+  return roughmeadowAPI.get(`/modules/files/uploads/${payload.id}/`)
+}
+function modules_files_uploads_update(payload) {
+  return roughmeadowAPI.put(`/modules/files/uploads/${payload.id}/`, payload)
+}
+function modules_files_uploads_partial_update(payload) {
+  return roughmeadowAPI.patch(`/modules/files/uploads/${payload.id}/`, payload)
+}
+function modules_files_uploads_destroy(payload) {
+  return roughmeadowAPI.delete(`/modules/files/uploads/${payload.id}/`)
+}
 function rest_auth_login_create(payload) {
   return roughmeadowAPI.post(`/rest-auth/login/`, payload)
 }
@@ -51,6 +69,12 @@ export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
   api_v1_signup_create,
+  modules_files_uploads_list,
+  modules_files_uploads_create,
+  modules_files_uploads_retrieve,
+  modules_files_uploads_update,
+  modules_files_uploads_partial_update,
+  modules_files_uploads_destroy,
   rest_auth_login_create,
   rest_auth_logout_create,
   rest_auth_password_change_create,
