@@ -79,6 +79,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [faq]()
 - [react-native-user-profile](modules/user-profile)
 - [react-native-photo-editing](modules/photo-editing)
+- [social-feed]()
 
 # Getting started: Frontend
 
